@@ -12,8 +12,10 @@ def test_average_premium_by_province():
     assert average_premium_by_province(df, 'Province1') == 150.0
     assert average_premium_by_province(df, 'Province2') == 200.0
     assert average_premium_by_province(df, 'Province3') == 300.0
-    
-    assert average_premium_by_province(df, 'NonExistentProvince') == float('nan')
+
+    result = average_premium_by_province(df, 'NonExistentProvince')
+    assert pd.isna(result) 
 
     empty_df = pd.DataFrame(columns=['Province', 'TotalPremium'])
-    assert average_premium_by_province(empty_df, 'Province1') == float('nan')
+    result = average_premium_by_province(empty_df, 'Province1')
+    assert pd.isna(result)
