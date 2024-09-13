@@ -1,4 +1,5 @@
 /config.local
 /tmp
 /cache
-MachineLearningRating_v3.txt
+data/MachineLearningRating_v3.txt
+
