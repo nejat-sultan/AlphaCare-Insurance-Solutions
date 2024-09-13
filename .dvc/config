@@ -1,0 +1,4 @@
+[core]
+    remote = localstorage
+['remote "localstorage"']
+    url = C:\Users\nejat\AIM Projects\AlphaCare-Insurance-Solutions\Projects\AlphaCare-Insurance-Solutions\storage
